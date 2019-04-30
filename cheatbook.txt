@@ -450,3 +450,54 @@ print(exDict)
 
 #########################################################
 #Built In Functions 
+#Built In Functions 
+
+exNum1=5
+exNum2=-5
+print('exNum1: ', (exNum1))
+print('exNum2: ', abs(exNum2))
+
+if (abs(exNum2)==(exNum1)):
+    print('Both are exactly same!!')
+else:
+    print('Not Same!!!..')
+#########################################################
+# Other Built-In functions: 
+exList = [5,6,2,1,4,8,5,2,4]
+print(max(exList))
+print(min(exList))
+x=5.998
+print(round(x))
+
+import math     #Using math functions
+x=5.7
+print(math.floor(x))
+print(math.ceil(x))
+
+
+intMe='55'          #Using Type-casting functions
+print(int(intMe))
+print(float(intMe))
+strMe=77
+print(str(strMe))
+########################################################
+
+# #OS Modules     (Using OS Modules)
+import os
+
+curDir = os.getcwd()
+print(curDir)
+os.mkdir('newDir')
+
+import time
+time.sleep(2)
+
+os.rename('newDir', 'newDir2')
+time.sleep(2)
+
+os.rmdir('newDir2')
+
+#help(os)  - for help about the Module
+
+#########################################################
+

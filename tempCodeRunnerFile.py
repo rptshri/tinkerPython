@@ -1,15 +1,6 @@
-print(exDict['Jack']
-
-# exDict ['Tim'] = 14  
-
-# # add into dictionary
-
-# print(exDict)
-
-# exDict['Tim']=15  # Updating values in dictionary
-
-# print(exDict)
-
-# del exDict['Tim']
-
-# print(exDict)
+#Other Built-In functions: 
+# exList = [5,6,2,1,4,8,5,2,4]
+# print(max(exList))
+# print(min(exList))
+# x=5.998
+# print(roun
