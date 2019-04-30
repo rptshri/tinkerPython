@@ -536,7 +536,7 @@ os.rmdir('newDir2')
 
 #help(os)  - for help about the Module'''
 
-
+'''
 #System Modules:
 
 # argv most important functionality
@@ -550,9 +550,39 @@ print(sys.argv )    #prints all the arguments passed
 
 if len(sys.argv)>1:
     print(sys.argv[1])
+    print(float(sys.argv[1]))
+'''
+'''
+import sys
+def main(arg):
+    print(arg)
 
+main(sys.argv[1])
+'''
+'''
+# urllib
+import urllib.request
+import urllib.parse
+# x = urllib.request.urlopen('https://www.google.com')
 
+# print(x.read())     #for making read request
 
+url = 'http://pythonprogramming.net'
+values = {
+    's': 'basic',
+    'submit': 'search'
+}
+
+data = urllib.parse.urlencode(values)
+print('after urlEncode: ', data)
+data = data.encode('utf-8')
+print('after utf-8Encode: ',data)
+req = urllib.request.Request(url,data)
+resp = urllib.request.urlopen(req)
+respData = resp.read()
+print(respData)
+
+'''
 
 
 
