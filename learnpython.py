@@ -208,7 +208,7 @@ saveFile.write(text)
 saveFile.close()
 '''
 '''
-#Appending files
+# Appending files
 append = '\n ajfscac ach'
 
 appendFile = open('example.txt','a')
@@ -251,7 +251,7 @@ calculator.division(3,5)
 '''
 
 
-'''#!/usr/bin/python       notifies linux the 
+'''#!/usr/bin/python       notifies linux the
 #                       path of python so that it can be run as executable
 
 def epic():
@@ -270,7 +270,7 @@ x = input('What is your name?  ')
 print('Hello',x)
 '''
 '''
-#STATISTICS
+# STATISTICS
 import statistics
 
 exampleList = [2,4,8,5,9,7,1,5,6,5,2,1,7,8,3,2,5,9,4,2,8]
@@ -280,7 +280,7 @@ print (statistics.stdev(exampleList))
 print (statistics.variance(exampleList))
 '''
 '''
-    #Module import syntax
+    # Module import syntax
     import statistics as s
 
     exampleList = [2,4,8,5,9,7,1,5,6,5,2,1,7,8,3,2,5,9,4,2,8]
@@ -317,14 +317,14 @@ print (v(exampleList))
 print (m(exampleList))
 '''
 '''
-#for importing everything
+# for importing everything
 from statistics import *
 exampleList = [2,4,8,5,9,7,1,5,6,5,2,1,7,8,3,2,5,9,4,2,8]
 print (variance(exampleList))
 print (median(exampleList))
 '''
 '''
-#Making a module and using it!
+# Making a module and using it!
 import examplemodule
 
 examplemodule.ex('Arpit Shrivastava.')
@@ -346,7 +346,7 @@ def exampleFunc():
 x, y = exampleFunc()
 print(x, '   ', y)
 
-#lists
+# lists
 c = [5, 6, 2, 6]
 print(c[0])
 print(c[3])
@@ -379,14 +379,14 @@ y.sort()
 print(y)
 '''
 '''
-#Multi Dimensional List
+# Multi Dimensional List
 
 x=[[5,6],[7,8],[3,1],[9,0],[3,7]]
 
 print(x[1])
 print(x[1][1])
- 
- 
+
+
 x=[
     [[5,6],[7,8]],
     [[3,1],[9,0]],
@@ -424,12 +424,13 @@ with open('data.csv') as csvfile:
     print(colors)
 
     whatColor = input('What color you want to know date of? ')
-    coldex = colors.index(whatColor.lower) #So that code runs even if user gives any case letter input
+    # So that code runs even if user gives any case letter input
+    coldex = colors.index(whatColor.lower)
     theDate = dates[coldex]
     print('The date of ', whatColor, 'is : ', theDate)
 '''
-
-#Error Exeption Handling (Try and Error)
+'''
+# Error Exeption Handling (Try and Error)
 import csv
 with open('data.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
@@ -449,14 +450,40 @@ with open('data.csv') as csvfile:
     try:
         whatColor = input('What color you want to know date of? ')
         if whatColor in colors:
-            coldex = colors.index(whatColor.lower) #So that code runs even if user gives any case letter input
+            # So that code runs even if user gives any case letter input
+            coldex = colors.index(whatColor.lower())
             theDate = dates[coldex]
             print('The date of ', whatColor, 'is : ', theDate)
         else:
             print('Color not found!')
 
-    #except Exception ,e
+    # except Exception ,e    #for python2
     except Exception as e:
         print(e)
 
     print('continuing ')
+'''
+'''
+# Dictionaries      (not working here)
+
+exDict = {'Jack': '15', 'Bob': '20', 'Alice': '21', 'Kevin': '17'}
+print(exDict)
+
+print(exDict['Jack']
+
+exDict['Tim']=14  
+
+# # add into dictionary
+
+# print(exDict)
+
+# exDict['Tim']=15  # Updating values in dictionary
+
+# print(exDict)
+
+# del exDict['Tim']
+
+# print(exDict)
+'''
+
+#Built In Functions 
